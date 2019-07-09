@@ -1,0 +1,21 @@
+// WordPress defaults
+@import "wordpress/wordpress";
+
+// Bootstrap custom
+@import "utilities/custom";
+
+// Style guide (Remove for final theme)
+@import "utilities/style-guide";
+
+// Components
+@import "components/comments";
+@import "components/sidebar";
+
+// Layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/sidebar";
+
+// Pages
+@import "pages/blog";

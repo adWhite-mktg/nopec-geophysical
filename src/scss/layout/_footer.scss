@@ -1,0 +1,26 @@
+.site-footer {
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  .social-list {
+    display: flex;
+  }
+
+  .social-item {
+    &:last-of-type {
+      .social-link {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .social-link {
+    color: white;
+    margin-right: .5em;
+    font-size: $font-size-lg * 1.5;
+
+    &:hover {
+      color: theme-color('brand-orange');
+    }
+  }
+}

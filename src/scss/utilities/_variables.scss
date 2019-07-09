@@ -1,0 +1,65 @@
+// https://github.com/twbs/bootstrap/issues/22891#issuecomment-316463806
+// Override theme colors
+
+ $theme-colors: (
+   brand-green: #17abab,
+   brand-blue: #11375f,
+   brand-white-transparent: rgba(255,255,255,.85),
+   brand-orange: rgba(249,161,30,1.00),
+ );
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true !default;
+$enable-rounded: false;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-hover-media-query: false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+$enable-print-styles: true !default;
+$enable-responsive-font-sizes: false !default;
+$enable-validation-icons: true !default;
+$enable-deprecation-messages: true !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: din-2014, sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: theme-color("brand-green");
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15%;
+
+$navbar-light-color: rgba(theme-color('brand-green'), .5);
+$navbar-light-hover-color: rgba($navbar-light-color, .7);
+$navbar-light-active-color: rgba($navbar-light-color, .9);
+$navbar-light-disabled-color: rgba($navbar-light-color, .3);
+$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml,%3csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
+$navbar-light-toggler-border-color: rgba($navbar-light-color, .1);
+
+//$navbar-light-brand-color:                $navbar-light-active-color !default;
+//$navbar-light-brand-hover-color:          $navbar-light-active-color !default;
+//$navbar-dark-brand-color:                 $navbar-dark-active-color !default;
+//$navbar-dark-brand-hover-color: $navbar-dark-active-color !default;

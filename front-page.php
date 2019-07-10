@@ -25,7 +25,43 @@ get_header();
 			</ul>
 		</div> <!-- .jumbotron-social-icons -->
 
-		<h2 class="h1 font-weight-normal jumbotron-heading">The world’s largest provider of subsurface data</h2>
+    <div class="aw-hero">
+	<div class="hero-content">
+		<h1 class="hero-title">The world’s largest provider of subsurface data</h1>
+		<div class="aw-buttons">
+			<a class="aw-btn" href="#">One</a>
+			<a class="aw-btn" href="#">Two</a>
+		</div>
+	</div>
+	
+
+	<img id="hero-map-12" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_02.png" alt="">
+
+	<img id="hero-map-11" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_03.png" alt="">
+
+	<img id="hero-map-10" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_04.png" alt="">
+
+	<img id="hero-map-09" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_05.png" alt="">
+
+	<img id="hero-map-08" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_06.png" alt="">
+
+	<img id="hero-map-07" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_07.png" alt="">
+
+	<img id="hero-map-06" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_08.png" alt="">
+
+	<img id="hero-map-05" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_09.png" alt="">
+
+	<img id="hero-map-04" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_10.png" alt="">
+
+	<img id="hero-map-03" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_11.png" alt="">
+
+	<img id="hero-map-02" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_12.png" alt="">
+
+	<img id="hero-map-01" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_13.png" alt="">
+
+	<img id="hero-map-00" class="map-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/313247/Homepage_Hero_LayeredMap_01.jpg" alt="">
+</div>
+<!-- /.aw-hero -->
 	</div> <!-- #hero -->
 
 	<div id="primary" class="content-area col-12 text-center text-brand-blue">

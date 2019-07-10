@@ -10,11 +10,11 @@
 
 #hero {
   position: relative;
-  padding-top: 10em;
-  padding-bottom: 10em;
-  background-image: url("/wp-content/uploads/2019/07/Homepage_Hero_LayeredMap.jpg");
-  background-size: cover;
-  background-position: center;
+  /* padding-top: 10em; */
+  /* padding-bottom: 10em; */
+  /* background-image: url("/wp-content/uploads/2019/07/Homepage_Hero_LayeredMap.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 
 .home #primary {
@@ -56,6 +56,183 @@
       color: theme-color('brand-orange');
     }
   }
+}
+
+.aw-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: auto;
+  max-width: 100%;
+}
+
+.map-img {
+  grid-column-start: start;
+  grid-column-end: end;
+  grid-row-start: start;
+  grid-row-end: end;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  grid-column-start: start;
+  grid-column-end: end;
+  grid-row-start: start;
+  grid-row-end: end;
+  z-index: 500;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 200;
+  text-align: center;
+}
+
+.aw-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.aw-btn {
+  background-color: RGBA(0, 171, 172, 0);
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  min-width: 170px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.aw-btn:hover {
+  background-color: RGBA(0, 171, 172, 1);
+  border: 2px solid RGBA(0, 171, 172, 1);
+}
+
+.aw-btn:nth-child(2) {
+  margin-left: 30px;
+}
+
+#hero-map-00 {
+  z-index: 0;
+}
+
+#hero-map-01 {
+  z-index: 10;
+  animation: 3s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-02 {
+  z-index: 20;
+  animation: 6s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-03 {
+  z-index: 30;
+  animation: 9s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-04 {
+  z-index: 40;
+  animation: 12s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-05 {
+  z-index: 50;
+  animation: 15s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-06 {
+  z-index: 60;
+  animation: 18s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-07 {
+  z-index: 70;
+  animation: 21s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-08 {
+  z-index: 80;
+  animation: 24s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-09 {
+  z-index: 90;
+  animation: 27s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-10 {
+  z-index: 100;
+  animation: 30s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-11 {
+  z-index: 110;
+  animation: 33s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+#hero-map-12 {
+  z-index: 120;
+  animation: 36s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+
+main>.container-fluid {
+  padding: 0;
+}
+
+#hero {
+  padding: 0;
+  background-image: none !important;
+}
+
+.jumbotron-social-icons {
+  z-index: 100000;
 }
 
 /*

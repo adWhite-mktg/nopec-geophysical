@@ -7,46 +7,34 @@
  * @package Low_Dash
  */
 
+$page_options = get_field( 'page_options', 'option' );
+$background_image = $page_options['header_background'];
+$background_image_url = $background_image['url'];
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="entry-header text-center text-brand-blue" style="background-image: url('<?php echo $background_image_url; ?>');">
+		<?php get_template_part( 'inc/social', 'icons' ); ?>
+
+		<div class="container">
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+			<div class="page-intro">
+                <?php the_field( 'intro' ); ?>
+			</div>
+		</div> <!-- .container -->
 	</header><!-- .entry-header -->
 
-	<?php low_dash_post_thumbnail(); ?>
-
 	<div class="entry-content">
-		<?php
-		the_content();
+		<div class="container">
+            <?php
+            the_content();
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'low-dash' ),
-			'after'  => '</div>',
-		) );
-		?>
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'low-dash' ),
+                'after'  => '</div>',
+            ) );
+            ?>
+		</div> <!-- .container -->
 	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'low-dash' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

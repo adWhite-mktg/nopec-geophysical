@@ -198,7 +198,7 @@
  * Page
  */
 
-.page-template-default {
+.page:not(.home) {
   .site-header {
     position: relative;
     z-index: 2;
@@ -217,6 +217,39 @@
   .entry-content {
     padding-top: 4em;
     padding-bottom: 4em;
+  }
+}
+
+/*
+ * About Template
+ */
+
+.page-template-about-us {
+  .entry-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .stripe-cta {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  .stripe-cta-text {
+    font-size: $font-size-lg;
+  }
+
+  .stripe-image {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+.stripe-content-text {
+  padding: 4em 2em !important;
+
+  p {
+    font-size: $font-size-lg;
   }
 }
 

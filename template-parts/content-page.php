@@ -14,6 +14,8 @@ $background_image_url = $background_image['url'];
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header text-center text-brand-blue" style="background-image: url('<?php echo $background_image_url; ?>');">
+		<?php get_template_part( 'inc/social', 'icons' ); ?>
+
 		<div class="container">
             <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

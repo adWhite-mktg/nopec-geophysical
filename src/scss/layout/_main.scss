@@ -15,8 +15,9 @@
   padding-bottom: 5em;
 }
 
-.jumbotron-social-icons {
+.social-icons {
   position: absolute;
+  z-index: 20000;
   top: 0;
   left: 0;
   margin-left: -2em;

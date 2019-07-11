@@ -70,5 +70,5 @@
 	</header><!-- #masthead -->
 
 	<main id="content" class="site-content">
-		<div class="container-fluid">
-			<div class="row">
+		<div class="container-fluid px-0">
+			<div class="row no-gutters">

@@ -2,19 +2,12 @@
  * The main content of the page
  */
 
-.site-content {}
-
 /*
  * Home
  */
 
 #hero {
   position: relative;
-  /* padding-top: 10em; */
-  /* padding-bottom: 10em; */
-  /* background-image: url("/wp-content/uploads/2019/07/Homepage_Hero_LayeredMap.jpg"); */
-  /* background-size: cover; */
-  /* background-position: center; */
 }
 
 .home #primary {
@@ -35,7 +28,6 @@
     padding-left: 2em;
     padding-right: 2em;
     display: flex;
-    //transform: skew(-30deg);
   }
 
   .social-item {
@@ -97,30 +89,6 @@
 .aw-buttons {
   display: flex;
   justify-content: center;
-}
-
-.aw-btn {
-  background-color: RGBA(0, 171, 172, 0);
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: block;
-  min-width: 170px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.aw-btn:hover {
-  background-color: RGBA(0, 171, 172, 1);
-  border: 2px solid RGBA(0, 171, 172, 1);
-}
-
-.aw-btn:nth-child(2) {
-  margin-left: 30px;
 }
 
 #hero-map-00 {
@@ -221,18 +189,34 @@
   }
 }
 
-
-main>.container-fluid {
-  padding: 0;
-}
-
-#hero {
-  padding: 0;
-  background-image: none !important;
-}
-
 .jumbotron-social-icons {
-  z-index: 100000;
+  z-index: 600;
+}
+
+/*
+ * Page
+ */
+
+.page-template-default {
+  .site-header {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 10px 5px rgba(1,1,1,.08);
+  }
+
+  .page-intro {
+    font-size: $font-size-lg;
+  }
+
+  .entry-header {
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+
+  .entry-content {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
 }
 
 /*

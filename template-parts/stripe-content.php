@@ -10,7 +10,9 @@ $image_url = $image['url'];
 
 <div class="stripe-content <?php echo $theme_class; ?>">
 	<div class="row no-gutters">
-		<div class="col-md-6 stripe-content-text">
+		<div class="col-lg-6 stripe-content-text">
+    <div class="stripe-skew">
+      <div class="stripe-content-wrapper"> 
             <h2 class="h1"><?php the_sub_field('title'); ?></h2>
 
             <?php the_sub_field( 'content' ); ?>
@@ -18,9 +20,11 @@ $image_url = $image['url'];
             <a class="<?php echo $btn_class; ?>" href="<?php the_sub_field( 'button_link' ); ?>" aria-label="<?php the_sub_field( 'button_label' ); ?>">
                 <?php the_sub_field( 'button_text' ); ?>
             </a>
-		</div>	<!-- .col-md-6 -->
+        </div>
+      </div>
+		</div>	<!-- .col-lg-8 -->
 
-		<div class="col-md-6 stripe-content-image" style="background-image: url('<?php echo $image_url ?>');">
-		</div> <!-- .col-md-6 -->
+		<div class="col-lg-6 stripe-content-image" style="background-image: url('<?php echo $image_url ?>'); background-repeat: no-repeat; background-size: cover;">
+		</div> <!-- .col-lg-8 -->
 	</div> <!-- .container -->
 </div> <!-- .stripe-content -->

@@ -262,3 +262,61 @@
   background-color: theme-color('brand-green');
   border-color: theme-color('brand-green');
 }
+
+
+
+/*
+ * ABOUT PAGE SKEW
+ */
+
+html {
+  overflow-x: hidden;
+  }
+  
+  
+  @media (min-width: 992px) {  
+  .stripe-content-text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  
+  .stripe-content:nth-child(4) .stripe-skew,
+  .stripe-content:nth-child(6) .stripe-skew {
+      background-color: RGBA(14, 54, 96, 1.00);
+  }
+  
+  .stripe-content:nth-child(5) .stripe-skew,
+  .stripe-content:nth-child(7) .stripe-skew {
+      background-color: RGBA(230, 244, 254, 1.00);
+  }
+  
+  .stripe-skew {
+    -webkit-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+    transform: skew(-45deg);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 156%;
+    margin-left: -20%;
+  }
+  
+  
+  .stripe-content-wrapper {
+    width: 80%;
+    padding-left: 20%;
+     -webkit-transform: skew(45deg);
+    -ms-transform: skew(45deg);
+    transform: skew(45deg);
+  }
+  
+  .stripe-content-image img {
+    height: 100%;
+    width: auto;
+  }
+  }
+  
+  

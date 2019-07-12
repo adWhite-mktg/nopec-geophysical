@@ -317,11 +317,13 @@ html {
     flex-direction: row-reverse;
   }
 
-  .stripe-content:nth-child(4) .stripe-skew {
+  .stripe-content:nth-child(4) .stripe-skew,
+  .stripe-content:nth-child(6) .stripe-skew  {
     margin-left: -44%;
   }
 
-  .stripe-content:nth-child(4) .stripe-content-wrapper {
+  .stripe-content:nth-child(4) .stripe-content-wrapper,
+  .stripe-content:nth-child(6) .stripe-content-wrapper {
     margin-left: 5%;
   }
 }

@@ -323,7 +323,59 @@ html {
   }
 
   .stripe-content:nth-child(4) .stripe-content-wrapper,
-  .stripe-content:nth-child(6) .stripe-content-wrapper {
+  .stripe-content:nth-child(4) .stripe-content-wrapper {
     margin-left: 5%;
   }
+}
+
+/* Fine-Tuned */
+@media only screen and (min-width: 992px) and (max-width: 1000px) {
+	.stripe-content:nth-child(4) .stripe-skew  {
+      margin-left: -115%;
+      width: 410%;
+    }
+
+    .stripe-content:nth-child(4) .stripe-content-wrapper {
+      margin-left: 2%;
+      max-width: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1000px) {
+	.stripe-content:nth-child(5) .stripe-skew  {
+      margin-left: -45%;
+      width: 210%;
+    }
+
+    .stripe-content:nth-child(5) .stripe-content-wrapper {
+      margin-left: 10%;
+      max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1000px) {
+	.stripe-content:nth-child(6) .stripe-skew  {
+      margin-left: -95%;
+      width: 410%;
+    }
+
+    .stripe-content:nth-child(6) .stripe-content-wrapper {
+      margin-left: 2%;
+      max-width: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1000px) {
+	.stripe-content:nth-child(7) .stripe-skew  {
+      margin-left: -45%;
+      width: 210%;
+    }
+
+    .stripe-content:nth-child(7) .stripe-content-wrapper {
+      margin-left: 10%;
+      max-width: 75%;
+    }
+  .stripe-content:nth-child(7) .stripe-content-image {
+     background-position: -110px;
+    }
 }

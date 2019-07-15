@@ -22,9 +22,9 @@ $image_url = $image['url'];
             </a>
         </div>
       </div>
-		</div>	<!-- .col-lg-8 -->
+		</div>	<!-- .col-md-8 -->
 
 		<div class="col-lg-6 stripe-content-image" style="background-image: url('<?php echo $image_url ?>'); background-repeat: no-repeat; background-size: cover;">
-		</div> <!-- .col-lg-8 -->
+		</div> <!-- .col-md-4 -->
 	</div> <!-- .container -->
 </div> <!-- .stripe-content -->

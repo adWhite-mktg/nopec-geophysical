@@ -269,6 +269,8 @@
  * ABOUT PAGE SKEW
  */
 
+ /*
+
 html {
   overflow-x: hidden;
 }
@@ -313,9 +315,7 @@ html {
     transform: skew(45deg);
   }
 
-  .stripe-content:nth-child(even) .row {
-    flex-direction: row-reverse;
-  }
+ 
 
   .stripe-content:nth-child(4) .stripe-skew,
   .stripe-content:nth-child(6) .stripe-skew  {
@@ -328,7 +328,11 @@ html {
   }
 }
 
+*/
+
 /* Fine-Tuned */
+
+/*
 @media only screen and (min-width: 992px) and (max-width: 1000px) {
 	.stripe-content:nth-child(4) .stripe-skew  {
       margin-left: -115%;
@@ -378,4 +382,10 @@ html {
   .stripe-content:nth-child(7) .stripe-content-image {
      background-position: -110px;
     }
+}
+
+*/
+
+.stripe-content:nth-child(even) .row {
+  flex-direction: row-reverse;
 }

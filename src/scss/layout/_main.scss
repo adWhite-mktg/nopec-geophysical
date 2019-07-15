@@ -31,6 +31,10 @@
     display: flex;
   }
 
+  .jumbotron {
+    background-color: RGBA(0, 171, 172, 1.00) !important;
+  }
+
   .social-item {
     transform: skew(30deg) !important;
   }
